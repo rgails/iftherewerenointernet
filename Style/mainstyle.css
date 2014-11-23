@@ -211,7 +211,7 @@ a:visited, a:hover
 
 */
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 765px){
   .innerContent{min-width: 0px;}
   .threecolumn1{width: 100%;float:none;margin-bottom: 10px;height: 30%;}
   .threecolumn2{width: 100%;float:none;margin-bottom: 10px;height: 30%;}
