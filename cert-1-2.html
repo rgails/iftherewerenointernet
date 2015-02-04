@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title>The Expert</title>
+    <script>
+        window.onload = function () {
+            //Nothing
+//            var outerdiv = document.getElementById('outerDiv'); //Get the element by ID; you know that shiz
+//            if (outerdiv){
+//                //alert(outerdiv.innerHTML);
+//            }
+//            var paragraphs = document.getElementsByTagName('p');
+//            if (paragraphs){
+//                //alert('Paragraph tags: ' + paragraphs.length);
+//            }
+//            var subP = document.getElementsByClassName('subPara');
+//            if (subP){
+//                //alert('subPara elements: ' + subP.length);
+//            }
+            
+//            // Add the new article element to the end of outerDiv
+//            var newElement = document.createElement('article');
+//            newElement.innerText = 'My new <article> element';
+//            outerdiv.appendChild(newElement);
+//            // Does the same thing, but stacks up the DOM calls
+//            var element = document.getElementById('outerDiv').appendChild(document.createElement('article'));
+//            element.innerText = 'Stack those JS calls up!!!';
+            
+//            //What if you want to insert an item before another? We've got the solution to that.
+//            var element = document.getElementById('outerDiv').insertBefore(
+//                                    document.createElement('article'), //What you're inserting 
+//                                    document.getElementById('innerDiv'));//before which element you'd like to insert the new
+//            element.innerText = 'You\'ll you want some content, of course.';
+            
+            //How about appending using child hierarchy
+            var inner = document.getElementById('innerDiv');
+            var element = inner.insertBefore(document.createElement('article'), inner.firstChild);
+            element.innerText = "My insertBefore <article> element";
+        }
+    </script>
+</head>
+<body>
+    <div id="outerDiv">
+        <p class='mainPara'>Main Paragraph</p>
+        <ul>
+            <li>First LI</li>
+            <li>Second LI</li>
+            <li>Third LI</li>
+            <li>Fourth LI</li>
+        </ul>
+        <div id="innerDiv">
+            <p class='subPara' id='P1'>Paragraph 1</p>
+            <p class='subPara' id='P2'>Paragraph 2</p>
+            <p class='subPara' id='P3'>Paragraph 3</p>
+            <p class='subPara' id='P4'>Paragraph 4</p>
+        </div>
+        <table>
+            <tr>
+                <td>Row 1
+                </td>
+            </tr>            
+            <tr>
+                <td>Row 2
+                </td>
+            </tr>
+            <tr>
+                <td>Row 3
+                </td>
+            </tr>
+            <tr>
+                <td>Row 4
+                </td>
+            </tr>            
+            <tr>
+                <td>Row 5
+                </td>
+            </tr>
+        </table>
+        <input type="text" /><input type="submit" value="Submit" />
+    </div>
+</body>
+</html>
