@@ -32,10 +32,42 @@
 //                                    document.getElementById('innerDiv'));//before which element you'd like to insert the new
 //            element.innerText = 'You\'ll you want some content, of course.';
             
-            //How about appending using child hierarchy
-            var inner = document.getElementById('innerDiv');
-            var element = inner.insertBefore(document.createElement('article'), inner.firstChild);
-            element.innerText = "My insertBefore <article> element";
+//            //How about appending using child hierarchy
+//            var inner = document.getElementById('innerDiv');
+//            var element = inner.insertBefore(document.createElement('article'), inner.firstChild);
+//            element.innerText = "My insertBefore <article> element";
+            
+            //Removing an element
+//            var inner = document.getElementById('innerDiv');
+//            var p = inner.removeChild(document.getElementById('P1'));
+//            
+//            //Remove a NODE. This will remove everything contained in the specified element.
+//            var inner = document.getElementById('innerDiv');
+//            inner.removeNode(true); //This doesn't work in anything but IE. Go figure.
+            var drawingsurface = document.getElementById('drawingSurface');
+            var ctxt = drawingsurface.getContext('2d');
+            ctxt.beginPath();
+            ctxt.moveTo(10,10);
+            ctxt.lineTo(399,20);
+            ctxt.lineTo(350,30);            
+            ctxt.lineTo(399,40);
+            ctxt.lineTo(350,50);
+            ctxt.lineTo(399,60);
+            ctxt.lineWidth = 1.5;
+            ctxt.strokeStyle = '#0f0';
+            ctxt.lineCap = 'round';
+            ctxt.stroke();
+            
+            var textDrawingSurface = document.getElementById('textDrawingSurface');
+            var ctxtText = textDrawingSurface.getContext('2d');
+            ctxtText.strokeText('1. Make a web page',100,100);
+            ctxtText.font = '35px Courier New';
+            ctxtText.strokeStyle = 'Red';
+            ctxtText.strokeText('2. Add some killer red text',100,130);
+            
+            ctxtText.font = '15px Courier New';
+            ctxtText.fillStyle = 'Green';
+            ctxtText.fillText('3. ???',100,150);
         }
     </script>
 </head>
@@ -53,6 +85,21 @@
             <p class='subPara' id='P2'>Paragraph 2</p>
             <p class='subPara' id='P3'>Paragraph 3</p>
             <p class='subPara' id='P4'>Paragraph 4</p>
+            <div id="innerInnerDiv">
+                <video src="" controls height="225" width="400"></video> 
+<!--                autoplay loop poster="startImage.jpg"-->
+<!--
+                Browsers will roll through all these sources until it finds one that's compatible
+                Clearly needs to go between the <video> tags
+                <source src="video.mp4" type="audio/mp4"/>                
+                <source src="video.ogv" type="video/ogg"/>
+                
+                If Nothing you listed is supported
+                <object>
+                    <p>You got NOTHIN'</p>
+                </object>
+-->
+            </div>
         </div>
         <table>
             <tr>
@@ -76,7 +123,15 @@
                 </td>
             </tr>
         </table>
-        <input type="text" /><input type="submit" value="Submit" />
+        <input type="text" /><input style="margin-left:5px;" type="submit" value="Submit" />
+        <div id="bottomDiv">
+            <canvas style="border:1px solid black; margin-top: 10px;" id="drawingSurface" width="600" height="400">
+                No HTML5 for you...
+            </canvas>
+            <canvas style="border:1px solid black; margin-top: 10px;" id="textDrawingSurface" width="600" height="400">
+                No HTML5 for you...
+            </canvas>
+        </div>
     </div>
 </body>
 </html>
