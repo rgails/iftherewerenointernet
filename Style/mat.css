@@ -22,9 +22,17 @@ body{
 }
 
 .nav-top li{
-    display: inline;
+    display: inline-block;
     margin-left: 10px;    
     margin-right: 10px;
+    text-align: center;
+    width:20%;
+    border-bottom: 1px solid black;
+}
+
+.nav-top li:hover{
+    border-bottom:5px solid #FF5252;
+    font-weight: bold;
 }
 
 .header-bar {
@@ -40,9 +48,28 @@ body{
     margin-right: auto;
     width: 95%;
     z-index: 50;
+    border-radius: 2px;
 }
 
 .text-center {
     text-align: center;
     padding: 10px;
+}
+
+.centered{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body-content-half {
+    width:49.5%;
+    z-index: 50;
+    float:left;
+    border-radius: 2px;
+}
+
+.middle-divider{
+    width: 1%;
+    float:left;
+    z-index: 50;
 }
