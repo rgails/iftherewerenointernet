@@ -13,23 +13,18 @@ body{
 .divider-color         { border-color: #B6B6B6; }
 
 .nav-top {
-    list-style: none;
-    list-style-type: none;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .nav-top li{
     display: inline-block;
-/*
-    margin-left: 5px;    
-    margin-right: 5px;
-*/
-    padding: 2px;
-    text-align: center;
-    width:23.5%;
+    line-height: 15px;
+    padding: 0 20px;
+    width:80px;
     border-bottom: 1px solid black;
     -webkit-transition: border-color .5s ease, border-width .5s ease;
        -moz-transition: border-color .5s ease, border-width .5s ease;
@@ -37,7 +32,6 @@ body{
         -ms-transition: border-color .5s ease, border-width .5s ease;
             transition: border-color .5s ease, border-width .5s ease;  
 }
-
 .nav-top li:hover{
     border-bottom: 5px solid #FF5252;
     font-weight: bold;
@@ -45,7 +39,7 @@ body{
 
 .header-bar {
     width:75%;
-    height: 10%;
+    height: 25px;
     margin-left: auto;
     margin-right: auto;    
     z-index: 100;

@@ -5,10 +5,13 @@ html
     background-color: #6D0000;
 }
 
+hr{
+    border-color: black;
+}
 body {
   min-height: 100%;
 }
-.hello {
+.white {
     color: white;    
 }
 
@@ -19,14 +22,58 @@ body {
 .SectionTitle {
     font-size: 2em;
     line-height: 1.5em;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .SingleCol {
-    width: 35%;
+    width: 75%;
 }
 
 .centered
 {
   margin-left: auto;
   margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    color:black;
+}
+.content-wrapper {
+    width: 75%;
+    height: 100%;
+    background-color: burlywood;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.hella-important {
+    font-weight: bolder;
+    font-size: 15pt;
+    font-style: italic;
+}
+
+li
+{
+    list-style: none;
+    /*float: left;
+    margin-right: 10px;*/
+    height: inherit;
+    line-height: 50px;
+    padding: 0 10px;
+}
+ul {
+    display: flex;
+    justify-content: center;
+}
+li:hover{
+    color:red;
+    transform: scale(1.5);
+}
+.shadow {
+    box-shadow: 0px 8px 5px -5px black;
 }
