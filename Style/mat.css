@@ -1,7 +1,7 @@
 body{
     height: 100vh;
     overflow: auto;
-/*    position:absolute;*/
+    padding-top: 1%;
 }
 .dark-primary-color    { background: #616161; }
 .default-primary-color { background: #9E9E9E; }
@@ -103,7 +103,12 @@ body{
     z-index: 50;
     border-radius: 2px;
         margin-bottom: 10px;
+      font-size: 25pt;
   }
+    
+    .body-content{
+        font-size: 25pt;
+    }
 }
 
 @media screen and (max-width: 765px){
@@ -114,5 +119,10 @@ body{
     z-index: 50;
     border-radius: 2px;
         margin-bottom: 10px;
+        font-size: 25pt; /* Make the shit readable on smaller screens*/
   }
+    
+    .body-content{
+        font-size: 25pt; /* Make the shit readable on smaller screens*/
+    }
 }
