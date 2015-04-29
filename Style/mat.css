@@ -3,6 +3,11 @@ body{
     overflow: auto;
     padding-top: 1%;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
 .dark-primary-color    { background: #616161; }
 .default-primary-color { background: #9E9E9E; }
 .light-primary-color   { background: #F5F5F5; }
