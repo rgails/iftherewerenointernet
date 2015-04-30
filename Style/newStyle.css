@@ -60,11 +60,14 @@ a{
 li
 {
     list-style: none;
-    /*float: left;
-    margin-right: 10px;*/
     height: inherit;
     line-height: 50px;
     padding: 0 10px;
+    -webkit-transition: color .5s ease, -webkit-transform .5s ease;
+       -moz-transition: color .5s ease, -moz-transform .5s ease;
+         -o-transition: color .5s ease, -o-transform .5s ease;
+        -ms-transition: color .5s ease, -ms-transform .5s ease;
+            transition: color .5s ease, transform .5s ease;  
 }
 ul {
     display: flex;
