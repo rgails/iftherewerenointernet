@@ -1,7 +1,7 @@
 .flex-container{
     display: flex;
-    flex-direction: row;
-    text-align: center;
+    flex-direction: column;
+/*    text-align: center;*/
     /*justify-content: center;*/
 }
 
@@ -21,3 +21,28 @@
 li{list-style: none;}
 a{text-decoration: none;color: mediumaquamarine;}
 body{background-color: black;}
+.left-menu {
+    text-align: left;
+    padding: 10px 5px 10px;
+}
+
+.left-menu div{
+    padding: 5px 0px;
+    -webkit-transition: color .7s ease, font-size .7s ease;
+       -moz-transition: color .7s ease, font-size .7s ease;
+         -o-transition: color .7s ease, font-size .7s ease;
+            transition: color .7s ease, font-size .7s ease;
+}
+
+.flex-item{
+    
+}
+
+.left-menu div:hover{
+    color: white !important;
+    font-size: 20pt !important;
+}
+
+.nave-side {
+    max-width: 15%;
+}
