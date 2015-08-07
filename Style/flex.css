@@ -1,4 +1,4 @@
-.flex-container{
+.flex-container-column{
     display: flex;
     flex-direction: column;
 /*    text-align: center;*/
@@ -46,3 +46,27 @@ body{background-color: black;}
 .nave-side {
     max-width: 15%;
 }
+
+.text-block {
+    background-color: grey;
+    margin: 10px 0px;
+    min-height: 100%;
+}
+
+.text-center {
+    text-align: center;
+    padding: 10px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Make all children except for last ni a flex-container-row have a right padding of 20px*/
+.flex-container-row > div:not(:last-child){
+    margin-right:20px;
+}
+
+
