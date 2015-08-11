@@ -21,12 +21,17 @@
 li{list-style: none;}
 a{text-decoration: none;color: mediumaquamarine;}
 body{background-color: black;}
-.left-menu {
+.top-menu {
     text-align: left;
     padding: 10px 5px 10px;
+    max-width: 33%;
+}
+/*LEFT MENU*/
+.top-menu > a:not(:last-child){
+    margin-right: 5px;
 }
 
-.left-menu div{
+.top-menu div{
     padding: 5px 0px;
     -webkit-transition: color .7s ease, font-size .7s ease;
        -moz-transition: color .7s ease, font-size .7s ease;
@@ -34,17 +39,9 @@ body{background-color: black;}
             transition: color .7s ease, font-size .7s ease;
 }
 
-.flex-item{
-    
-}
-
-.left-menu div:hover{
+.top-menu div:hover{
     color: white !important;
     font-size: 20pt !important;
-}
-
-.nave-side {
-    max-width: 15%;
 }
 
 .text-block {
@@ -86,3 +83,9 @@ body{background-color: black;}
 
 
 
+
+.nav-top {
+    margin: 0px 10px;
+    border: 1px solid darkred;
+    border-radius: 2px;
+}
