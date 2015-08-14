@@ -19,12 +19,11 @@
 }
 
 li{list-style: none;}
-a{text-decoration: none;color: mediumaquamarine;}
+a{text-decoration: none;color: gray;}
 body{background-color: black;}
 .top-menu {
     text-align: left;
     padding: 10px 5px 10px;
-    max-width: 33%;
 }
 /*LEFT MENU*/
 .top-menu > a:not(:last-child){
@@ -48,20 +47,21 @@ body{background-color: black;}
     background-color: grey;
     margin: 10px 0px;
     min-height: 100%;
-    
+    opacity: .5;
     border-radius: 1px;
     
     /*Transitions for Box-Shadow and Size*/
-    -webkit-transition: box-shadow .7s, transform .7s ease-in-out;
-       -moz-transition: box-shadow .7s, transform .7s ease-in-out;
-         -o-transition: box-shadow .7s, transform .7s ease-in-out;
-        -ms-transition: box-shadow .7s, transform .7s ease-in-out;
-            transition: box-shadow .7s, transform .7s ease-in-out;
+    -webkit-transition: box-shadow .7s, transform .7s, opacity .7s ease-in-out;
+       -moz-transition: box-shadow .7s, transform .7s, opacity .7s ease-in-out;
+         -o-transition: box-shadow .7s, transform .7s, opacity .7s ease-in-out;
+        -ms-transition: box-shadow .7s, transform .7s, opacity .7s ease-in-out;
+            transition: box-shadow .7s, transform .7s, opacity .7s ease-in-out;
 }
 
 .text-block:hover{
     box-shadow: 0px 8px 5px -5px mediumaquamarine;;
     transform: scale(1.01);
+    opacity: 1;
 }
 
 .text-center {
@@ -80,12 +80,15 @@ body{background-color: black;}
     margin-right:20px;
 }
 
-
-
-
-
 .nav-top {
-    margin: 0px 10px;
     border: 1px solid darkred;
+    background-color: darkred;
     border-radius: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
+
