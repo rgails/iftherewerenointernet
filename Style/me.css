@@ -7,6 +7,6 @@
     flex-direction: column;
 }
 
-.headerRow{
+.infoRow{
     flex: 2 !important;
 }
