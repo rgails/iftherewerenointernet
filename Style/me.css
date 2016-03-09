@@ -1,12 +1,46 @@
 .flex{
     display: flex;
-    flex:1;
 }
 
-.column{
-    flex-direction: column;
+.flex-even{
+    justify-content: space-between;
 }
 
 .infoRow{
-    flex: 2 !important;
+/*    flex: 2 !important;*/
+}
+
+.third{
+    width: 33%;
+}
+
+.menuItem{
+    height:50px;
+    width: 33%;
+    background-color: aquamarine;
+    text-align: center;
+    line-height: 50px;
+    white-space: nowrap;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: black;
+}
+
+.flex-footer{
+    justify-content: flex-end;
+    bottom:0;
+    height: 50px;
+    background-color: darkorange;
+}
+
+.flex-column {
+    flex-direction: column;
+    height: 100%;
+}
+
+.flex-header{
+    display: flex;
 }
