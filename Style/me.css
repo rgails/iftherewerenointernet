@@ -15,25 +15,27 @@
 }
 
 .menuItem{
-    height:50px;
     width: 33%;
-    background-color: aquamarine;
-    text-align: center;
-    line-height: 50px;
-    white-space: nowrap;
+    background-color: #669999;
+    align-items: center;
+    justify-content: center;
+/*    padding: 10px;*/
 }
 
 html, body {
     margin: 0;
     height: 100%;
-    background-color: black;
+    background-color: #AA3939;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 .flex-footer{
-    justify-content: flex-end;
-    bottom:0;
-    height: 50px;
-    background-color: darkorange;
+    flex-grow: 1;
+    background-color: #88CC88;
+    align-items: stretch;
+}
+
+.footer{
 }
 
 .flex-column {
@@ -42,5 +44,31 @@ html, body {
 }
 
 .flex-header{
-    display: flex;
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+.flex-content {
+    flex-grow: 20;
+    padding: 20px;
+    font-weight: 600;
+    flex-direction: column;
+    background-color: #FFD1AA;
+}
+
+.flex-content h1 {
+    font-style: italic;
+}
+
+.footerItem {
+    width: 33%;
+    justify-content: flex-start;    
+    padding-left: 10px;
+    flex-direction: column;
+}
+
+.footerItem a
+{
+    text-decoration: none;
+    color: inherit;
 }

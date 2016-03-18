@@ -1,0 +1,101 @@
+/*
+    cross-browser compatibility
+    autoprefixer.github.io
+    grunt/gulp
+    
+    he uses gulp
+*/
+.box{
+/*    height: 100px;*/
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+/*    border: 2px solid black;*/
+/*    width: 33.33333%;*/
+/*    flex: 1;*/
+/*    These Three are the components of flex*/
+
+/*    flex-grow: 1;*/
+/*    flex-shrink: 1;*/
+/*    flex-basis: 250px;*/
+
+}
+
+.container{
+    display: flex;
+/*    height: 100vh;*/
+    border: 10px solid mistyrose;
+/*    flex-direction: column;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+    /*Needs Height*/
+/*    align-items: flex-start; */
+     /*Needs Wrap*/
+/*    align-content: center;*/
+}
+
+.box3{
+/*    order: 5;*/
+}
+
+.box7 {
+/*    order: 3;*/
+}
+
+/*Random colorings*/
+
+.box1 {
+    background: green;
+/*
+    flex-basis: 400px;
+    Default flex-grow is 0
+    flex-grow: 10;
+    flex-shrink: 5;
+*/
+/*    flex: 10 5 400px;*/
+/*    grow shrink basis*/
+}
+
+.box2 {
+    background: darkblue;
+/*    flex: 2;*/
+/*    flex-basis: 400px;*/
+/*    flex-grow: 1;*/
+
+/*    flex: 1 1 400px;*/
+}
+
+.box3 {
+    background: purple;
+/*    flex-grow: 10;*/
+}
+
+.box4 {
+    background: gray;
+/*    flex-basis: 100px;*/
+}
+
+.box5 {
+ background: goldenrod;   
+}
+
+.box6 {
+    background: black;
+}
+
+.box7 {
+    background: darkred;
+}
+
+.box8 {
+    background: aqua;
+}
+
+.box9 {
+    background: teal;
+}
+
+.box10 {
+    background: forestgreen;
+}
