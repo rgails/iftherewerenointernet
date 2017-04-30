@@ -1,7 +1,7 @@
 body{
     font-family: sans-serif;
     margin: 0;
-    background-color: #C41414;
+    background-color: dimgray;
 }
 a{
     color: white;
@@ -99,6 +99,15 @@ img{
     text-align: center;
 }
 
+.contact a {
+    padding: 0;
+    width: auto;
+}
+
+.contact a:hover {
+    background: none;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -109,15 +118,28 @@ img{
 
 .indent {
     margin-left: 25px;
+    margin-top: 10px;
 }
 
 section, footer{
     text-align: center;
     background: rgba(0,0,0,0.2);
     padding: 20px;
-    margin: 20px 0;
+    margin: 5px 0;
     color: white;
     font-weight: 100;
+}
+
+.resume > .flex-item {
+/*    background-color: darkred*/
+}
+
+.resume >.flex-item:hover{
+    z-index: 2;
+    -webkit-transition: all 250ms;
+    -moz-transition: all 250ms;
+    transition: all 250ms;
+    box-shadow: 0 -2px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
 }
 /*
     MOBILE
